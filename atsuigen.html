@@ -2,19 +2,32 @@
 <html>
 	<head>
 		<title>
-			あつい！ジェネレーター ver.0.0.1
+			あつい！ジェネレーター
 		</title>
 		<script type="text/javascript" src="atsuigen.js"></script>
 	</head>
 	<body>
-
-	あつい！ジェネレーター ver.0.0.1 presented by threegirls89.<br>
-	生成した画像は右クリックメニューから保存することが出来ます。<br>
-
+	
+	<p>
+	あつい！ジェネレーター ver.0.0.2 presented by threegirls89.<br>
+	生成した画像は右クリックメニューから保存することが出来ます。
+	</p>
+	<p>
 	<canvas id=canvas0 width=800 height=400></canvas>
-	<br>
+	</p>
+	<p>
 	表示テキストを入力（！は自動で付加されます）<br>
 	<input type="text" id="txtDraw" value="あつい">
-	<input type="button" id="btnDraw" onclick="draw()" value="draw">
+	</p>
+	<p>
+	背景を選択<br>
+	<select size="1" id="lstBackground">
+		<option value="nii2" selected>2代目新潟色</option>
+		<option value="shonan">湘南色</option>
+	</select>
+	</p>
+	<p>
+	<input type="button" id="btnDraw" onclick="draw()" value="描画">
+	</p>
 	</body>
 </html>
